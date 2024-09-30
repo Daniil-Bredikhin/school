@@ -9,7 +9,6 @@ body {
 }
 
 .site-header {
-  min-width: 550px;
   height: 186px;
   margin-bottom: 150px;
   background: #a0ac36 no-repeat center url("img/gloevk-bg.jpg");
