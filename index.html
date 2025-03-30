@@ -1,43 +1,75 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta name="keywords" content="Газета, Школа, Фотографии, Блог">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Газета Школы №7">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <title>Школьная газета</title>
-    </head>
-    <body>
-        <header class="site-header">
-            <p><b>Школьная газета</b></p>
-            <button class="menu menu-open" type="button">Меню</button>
-        <nav class="main-menu">
-          <ul>
-            <li>
-              <a href="#">Колонка редактора</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-            <li>
-              <a href="#">Подписка</a>
-            </li>
-          </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название страницы</title>
+    <!-- Стили -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
         </nav>
-        </header>
-        <main>
-            основной контентi
-<?php
-echo "Код php";
-?>
-        </main>
-        <footer class="site-footer">
-            <div class="container">
-                <p><b>© Даниил Бредихин, 2024</b></p>
-                <p><b>Все права защищены</b></p>
-            </div>
-        </footer>
-    </body>
+    </header>
 
+    <main>
+        <section id="home">
+            <div class="container">
+                <h1>Добро пожаловать!</h1>
+                <p>Это пример основного контента страницы</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>О нашей компании</h2>
+                <p>Здесь будет информация о компании</p>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2>Наши услуги</h2>
+                <div class="service-item">
+                    <h3>Услуга 1</h3>
+                    <p>Описание услуги</p>
+                </div>
+                <div class="service-item">
+                    <h3>Услуга 2</h3>
+                    <p>Описание услуги</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Свяжитесь с нами</h2>
+                <form>
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Сообщение"></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Название компании. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Скрипты -->
+    <script src="js/main.js"></script>
+</body>
 </html>
